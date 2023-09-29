@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: rgb(251, 249, 227);
+  background: linear-gradient(
+    180deg,
+    rgba(251, 249, 227, 1) 20%,
+    rgba(255, 224, 202, 1) 100%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: #0a0a0a;
+}
+h1 {
+  font-size: 4rem;
+  font-family: 'Montserrat Alternates', sans-serif;
+  letter-spacing: 2rem;
+}
