@@ -19,9 +19,21 @@ body {
   height: 100vh;
   color: #0a0a0a;
 }
-h1 {
-  font-size: 4rem;
+.logo {
+  color: #0a0a0a;
+  height: 45px;
+  width: 155px;
   font-family: 'Montserrat Alternates', sans-serif;
-  letter-spacing: 2rem;
-  color: #373636;
+  border-bottom: 1px solid #0a0a0a;
+}
+.logo-top {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 12px;
+  margin-bottom: -5px;
+}
+.logo-bottom {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
