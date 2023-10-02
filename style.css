@@ -10,14 +10,13 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background: rgb(251, 249, 227);
-  background: linear-gradient(
-    180deg,
-    rgba(251, 249, 227, 1) 20%,
-    rgba(255, 224, 202, 1) 100%
-  );
+  background: linear-gradient(180deg, #fbf9e3 20%, rgba(255, 224, 202, 1) 100%);
   background-repeat: no-repeat;
   height: 100vh;
   color: #0a0a0a;
+}
+a {
+  text-decoration: none;
 }
 .logo {
   color: #0a0a0a;
@@ -36,4 +35,50 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background-color: #f4f2d3 50%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-middle {
+  display: flex;
+  list-style: none;
+}
+.nav-middle li a {
+  color: #0a0a0a;
+  font-size: 1.8rem;
+  padding: 0.9rem 2rem;
+  font-weight: 300;
+  transition: all 0.5s;
+}
+.nav-middle li a:hover {
+  color: #727171;
+}
+.icon {
+  font-size: 1.8rem;
+  color: #0a0a0a;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+.icon:hover {
+  color: #727171;
+}
+
+@media screen and (max-width: 870px) {
+  .nav-middle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navigation {
+    padding: 1rem 3rem;
+  }
 }
