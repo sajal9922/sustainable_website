@@ -24,13 +24,22 @@ h1 {
   line-height: 1.3;
   letter-spacing: 0.1rem;
 }
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
 img {
   width: 100%;
-  height: auto;
-  overflow: hidden;
+  border-radius: 1rem;
 }
 .center {
   text-align: center;
+}
+.container {
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: fit-content;
+  border-bottom: 1px solid #0a0a0a;
 }
 
 /* Logo */
@@ -108,7 +117,7 @@ img {
   margin: 22rem 15rem;
 }
 .banner-image-container {
-  height: 60rem;
+  height: 30%;
   width: 90%;
   margin: 0 auto;
   overflow: hidden;
@@ -128,5 +137,36 @@ img {
   }
   .banner-heading {
     margin: 10rem 6rem;
+  }
+}
+
+.media {
+  display: flex;
+  width: 90%;
+  margin: 10rem auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.media-heading {
+  margin-top: 10rem;
+}
+.media-container {
+  width: 39rem;
+  margin-bottom: 4rem;
+}
+.media-container img {
+  height: 22rem;
+  border-radius: 1rem;
+}
+.media-container p {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.media-container p span {
+  font-weight: 400;
+}
+@media screen and (max-width: 870px) {
+  .media-heading {
+    font-size: 2rem;
   }
 }
