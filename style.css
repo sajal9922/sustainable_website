@@ -174,11 +174,17 @@ img {
 .media-container {
   width: 39rem;
   margin-bottom: 4rem;
+  cursor: pointer;
 }
 .media-container img {
   height: 22rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 10px #0a0a0a;
+}
+.media-container img:hover {
+  box-shadow: none;
+  opacity: 0.9;
+  transition: all 0.3s;
 }
 .media-container p {
   font-size: 1.6rem;
@@ -217,6 +223,7 @@ img {
 }
 .partners-logo:hover {
   opacity: 0.4;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 870px) {
@@ -236,7 +243,7 @@ img {
 .target {
   display: flex;
   margin: 10rem auto;
-  background-color: #ccc;
+  background-color: #f8f3f395;
   padding: 2rem;
   border-radius: 2rem;
   width: 90%;
@@ -269,16 +276,16 @@ img {
 .target-author div {
   flex-grow: 1;
 }
-.btn-join {
+.btn-outline {
   font-size: 1.5rem;
-  padding: 0.7rem 1.5rem;
+  padding: 0.8rem 1.8rem;
   border-radius: 3rem;
   background-color: transparent;
   border: 1px solid #0a0a0a;
   cursor: pointer;
   transition: 0.3s;
 }
-.btn-join:hover {
+.btn-outline:hover {
   background-color: #0a0a0a;
   color: #fff;
 }
@@ -303,7 +310,7 @@ img {
   .target-quate {
     font-size: 2rem;
   }
-  .btn-join {
+  .btn-outline {
     font-size: 1.2rem;
     padding: 0.5rem 1.2rem;
   }
@@ -317,7 +324,7 @@ img {
   flex-wrap: wrap;
 }
 .card {
-  width: 30rem;
+  width: 29rem;
   height: 40rem;
   margin: 2rem;
   cursor: pointer;
@@ -352,4 +359,34 @@ img {
   font-size: 1.6rem;
   font-weight: 400rem;
   margin-top: 1rem;
+}
+
+.query {
+  height: 15rem;
+  background-color: #f8f3f395;
+  width: 90%;
+  margin: 5rem auto;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 6rem;
+  flex-wrap: wrap;
+}
+.query-content {
+  flex-grow: 1;
+  min-width: 70rem;
+}
+.query-content h4 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.query-content p {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 870px) {
+  .query {
+    padding: 0 3rem;
+  }
 }
