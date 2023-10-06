@@ -5,6 +5,7 @@
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -12,7 +13,6 @@ body {
   background: rgb(251, 249, 227);
   background: linear-gradient(180deg, #fbf9e3 20%, rgba(255, 224, 202, 1) 100%);
   background-repeat: no-repeat;
-
   color: #0a0a0a;
 }
 a {
@@ -75,6 +75,7 @@ img {
 .navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   padding: 1rem 6rem;
   background-color: #fbf9e3;
@@ -85,6 +86,7 @@ img {
 .nav-middle {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 .nav-middle li a {
   color: #0a0a0a;
@@ -180,11 +182,11 @@ img {
   height: 22rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 10px #0a0a0a;
+  transition: all 0.3s;
 }
 .media-container img:hover {
   box-shadow: none;
   opacity: 0.9;
-  transition: all 0.3s;
 }
 .media-container p {
   font-size: 1.6rem;
@@ -324,7 +326,7 @@ img {
   flex-wrap: wrap;
 }
 .card {
-  width: 29rem;
+  width: 25rem;
   height: 40rem;
   margin: 2rem;
   cursor: pointer;
@@ -336,7 +338,7 @@ img {
 .card-image {
   border-radius: 1rem;
   overflow: hidden;
-  height: 35rem;
+  height: 30rem;
 
   box-shadow: 2px 2px 5px #0a0a0a;
   background-size: cover;
@@ -359,6 +361,7 @@ img {
   font-size: 1.6rem;
   font-weight: 400rem;
   margin-top: 1rem;
+  margin-bottom: -0.3rem;
 }
 
 .query {
@@ -389,4 +392,62 @@ img {
   .query {
     padding: 0 3rem;
   }
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  padding: 3rem 4rem;
+  flex-wrap: wrap;
+}
+.content-container {
+  width: 30rem;
+  margin-right: 10rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+.content-container h4 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.content-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  height: 2.8rem;
+  width: 2.8rem;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #000;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.footer-icon:hover {
+  background-color: #000;
+  color: #fff;
+}
+footer .copy-right {
+  font-size: 1.1rem;
 }
